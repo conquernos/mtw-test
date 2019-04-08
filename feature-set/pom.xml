@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.conquernos</groupId>
+	<artifactId>mtw</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>machine tagged web</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<spark.version>2.2.0</spark.version>
+		<scala.binary.version>2.11</scala.binary.version>
+		<nd4j.version>0.9.1</nd4j.version>
+		<dl4j.version>0.9.1</dl4j.version>
+		<datavec.version>0.9.1</datavec.version>
+		<selenium.version>3.141.59</selenium.version>
+		<opencv.version>3.4.2-1</opencv.version>
+		<thunder.version>0.0.1-SNAPSHOT</thunder.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.conqueror</groupId>
+			<artifactId>thunder-common</artifactId>
+			<version>${thunder.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.conqueror</groupId>
+			<artifactId>thunder-drone</artifactId>
+			<version>${thunder.version}</version>
+		</dependency>
+		<!--selenium -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>23.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.11.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openpnp/opencv -->
+		<dependency>
+			<groupId>org.openpnp</groupId>
+			<artifactId>opencv</artifactId>
+			<version>${opencv.version}</version>
+		</dependency>
+
+
+		<!-- Core DL4J functionality -->
+		<dependency>
+			<groupId>org.deeplearning4j</groupId>
+			<artifactId>deeplearning4j-core</artifactId>
+			<version>${dl4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.deeplearning4j</groupId>
+			<artifactId>deeplearning4j-nn</artifactId>
+			<version>${dl4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nd4j</groupId>
+			<artifactId>nd4j-native-platform</artifactId>
+			<version>${nd4j.version}</version>
+		</dependency>
+		<!-- datavec-data-codec: used only in video example for loading video data -->
+		<dependency>
+			<artifactId>datavec-data-codec</artifactId>
+			<groupId>org.datavec</groupId>
+			<version>${datavec.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>
